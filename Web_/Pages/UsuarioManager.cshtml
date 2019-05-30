@@ -1,0 +1,109 @@
+﻿@page
+@model Web.Pages.UsuarioConsultaModel
+@{
+    ViewData["Title"] = "UsuarioConsulta";
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+
+    $(document).ready(function () {
+        getEmployeeList();
+    });
+
+    // Handle click event on Update button
+    function updateClick() {
+    }
+    // Handle click event on Add button
+    function addClick() {
+        alert('ok');
+    }
+
+    // Get all Employees to display
+    function getEmployeeList() {
+        // Call Web API to get a list of Employees
+        $.ajax({
+            url: 'https://localhost:44328/api/Usuario/',
+            type: 'GET',
+            dataType: 'json',
+            success: function (employees) {
+                WriteResponses(employees);
+            },
+            error: function (error) {
+                debugger;
+                alert(error);
+            }
+        });
+    }
+
+
+        //Displays in a Table
+        function WriteResponses(students) {
+            var strResult = "<table><th>Name</th><th>Student ID</th><th>Gender</th><th>Age</th>";
+            $.each(students, function (index, student) {
+                strResult += "<tr><td>" + student.nome + "</td><td> " + student.login + "</td><td>" + student.senha + "</td><td>" + student.age + "</td></tr>";
+            });
+            strResult += "</table>";
+            $("#divResult").html(strResult);
+        }
+
+    // Display all Employees returned from Web API call  
+    function employeeListSuccess(employees) {  
+      // Iterate over the collection of data  
+      $("#employeeTable tbody").remove();  
+      $.each(employees, function (index, employee) {  
+        // Add a row to the employee table  
+        employeeAddRow(employee);  
+      });  
+    } 
+
+/**/</script>
+
+<h2>UsuarioConsulta</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <table id="employeeTable" class="table table-bordered table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Login</th>
+                        <th>Senha</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        @*<div class="col-sm-6">
+            <button type="button" id="addButton"
+                    class="btn btn-primary" onclick="addClick();">
+                Adicionar usuário
+            </button>
+        </div>*@
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputLogin1">Login</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputSenha1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group"> 
+                    <label for="exampleInputSenha1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" id="addButton" class="btn btn-primary" onclick="addUsuario();">
+                    Adicionar usuário
+                </button>
+
+            </form>
+        </div>
+    </div>
+       
+</div>
+

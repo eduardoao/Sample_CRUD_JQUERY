@@ -46,6 +46,9 @@ namespace API
             services.AddDbContext<DataAccessContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DataBaseConnection")));
 
+            
+
+
 
 
         }
@@ -64,7 +67,14 @@ namespace API
             app.UseCors("MyPolicy");
             app.UseHttpsRedirection();
             app.UseMvc();
-          
+            
+         
+            app.UseMvc(routes =>
+            {
+                routes
+                    .MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}")
+                    .MapRoute(name: "api", template: "api/usuario/{controller}/{action}/{id?}");
+            });
 
 
         }

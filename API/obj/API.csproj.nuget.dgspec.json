@@ -1,40 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\API\\API.csproj": {}
+    "D:\\Sample_CRUD_JQUERY\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\API\\API.csproj": {
+    "D:\\Sample_CRUD_JQUERY\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\API\\API.csproj",
+        "projectUniqueName": "D:\\Sample_CRUD_JQUERY\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\API\\obj\\",
+        "projectPath": "D:\\Sample_CRUD_JQUERY\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\eduardo.oliveira\\.nuget\\packages\\",
+        "outputPath": "D:\\Sample_CRUD_JQUERY\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\eduardo.oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\Data.csproj": {
-                "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\Data.csproj"
+              "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj"
               },
-              "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Service\\Service.csproj": {
-                "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Service\\Service.csproj"
+              "D:\\Sample_CRUD_JQUERY\\Service\\Service.csproj": {
+                "projectPath": "D:\\Sample_CRUD_JQUERY\\Service\\Service.csproj"
               }
             }
           }
@@ -46,18 +48,22 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.1, )",
               "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
@@ -69,34 +75,36 @@
         }
       }
     },
-    "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\Data.csproj": {
+    "D:\\Sample_CRUD_JQUERY\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\Data.csproj",
+        "projectUniqueName": "D:\\Sample_CRUD_JQUERY\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\obj\\",
+        "projectPath": "D:\\Sample_CRUD_JQUERY\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\eduardo.oliveira\\.nuget\\packages\\",
+        "outputPath": "D:\\Sample_CRUD_JQUERY\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\eduardo.oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\Domain.csproj"
+              "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj"
               }
             }
           }
@@ -108,30 +116,24 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[2.2.1, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[2.2.1, )"
+              "version": "[2.1.1, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
-              "suppressParent": "All",
+            "Microsoft.Extensions.Configuration.FileExtensions": {
               "target": "Package",
-              "version": "[2.2.1, )"
+              "version": "[2.1.1, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
@@ -143,31 +145,33 @@
         }
       }
     },
-    "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\Domain.csproj": {
+    "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\obj\\",
+        "projectPath": "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\eduardo.oliveira\\.nuget\\packages\\",
+        "outputPath": "D:\\Sample_CRUD_JQUERY\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\eduardo.oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -178,7 +182,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
@@ -187,7 +191,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
@@ -199,37 +203,39 @@
         }
       }
     },
-    "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Service\\Service.csproj": {
+    "D:\\Sample_CRUD_JQUERY\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\Sample_CRUD_JQUERY\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Service\\obj\\",
+        "projectPath": "D:\\Sample_CRUD_JQUERY\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\eduardo.oliveira\\.nuget\\packages\\",
+        "outputPath": "D:\\Sample_CRUD_JQUERY\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\eduardo.oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\Data.csproj": {
-                "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Data\\Data.csproj"
+              "D:\\Sample_CRUD_JQUERY\\Data\\Data.csproj": {
+                "projectPath": "D:\\Sample_CRUD_JQUERY\\Data\\Data.csproj"
               },
-              "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Codigos\\Entrevistas\\ViaVarejo\\Fontes\\Codigo\\Domain\\Domain.csproj"
+              "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Sample_CRUD_JQUERY\\Domain\\Domain.csproj"
               }
             }
           }
@@ -241,7 +247,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
@@ -250,7 +256,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },

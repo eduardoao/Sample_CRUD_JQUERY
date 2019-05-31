@@ -59,7 +59,7 @@ namespace API.Controllers
             {
                 service.Post<UsuarioValidator>(value);
 
-                return new ObjectResult(value.Id);
+                return new OkObjectResult(value.Id);
             }
             catch (ArgumentNullException ex)
             {
